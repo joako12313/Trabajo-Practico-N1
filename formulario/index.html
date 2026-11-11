@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GameApp - Recomendaciones</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Configuración PWA para Celulares -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2c3152">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- CDN de Supabase en el navegador -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
   <header class="header">
@@ -74,5 +82,8 @@
   <footer class="footer">
     <p>Proyecto demo de recomendaciones de videojuegos</p>
   </footer>
+
+  <!-- Cliente de Supabase ya configurado -->
+  <script src="supabaseClient.js"></script>
 </body>
 </html>
