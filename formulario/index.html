@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Recomendaciones de juegos</h1>
+
+    <form action="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="genero">Genero:</label>
+        <select id="genero" name="genero" required>
+            <option value="">Seleccione un genero</option>
+            <option value="accion">Accion</option>
+            <option value="aventura">Aventura</option>
+            <option value="deportes">Deportes</option>
+            <option value="estrategia">Estrategia</option>
+        </select>
+
+        <label for="puntuacion">Puntuación:</label>
+        <input type="number" id="puntuacion" name="puntuacion" min="0" max="10" required placeholder="Ingrese una puntuacion del 0 al 10">
+
+        <label for="Reseña">Reseña:</label>
+        <textarea id="Reseña" name="Reseña" rows="4" required></textarea>
+
+        <label for="portada">URL Portada:</label>
+        <input type="url" id="portada" name="portada" required>
+
+        <label for="porque">¿Por qué lo recomendás?</label>
+        <textarea id="porque" name="porque" rows="3" placeholder="¿A quién se lo recomendarías?" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    
+</body>
+</html>
